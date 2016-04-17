@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Lamna Ravindran </title>
+	
+
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic|Lato:700" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="http://e7f68ebb3758bdb25667-2e1d599a594fcb040e60bfba8287e8e8.r4.cf1.rackcdn.com/default.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	
+	 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	 <script src="index.js"></script>
+
+     <script type="text/javascript" src="http://e7f68ebb3758bdb25667-2e1d599a594fcb040e60bfba8287e8e8.r4.cf1.rackcdn.com/scripts.min.js"></script>
+	
+
+
+
+</head>
+<body>
+<style>
+
+
+
+/*primary*/
+
+body{
+	color:#000 !important;
+}
+a,
+body > section .page h1,
+body > section .page h2,
+body > section .page h3,
+body > section .page h4,
+body > section#section_home .intro .agent {
+	color:#cc3300;
+	
+}
+#sidebar ul li a,
+#sidebar .agent_login {
+	color: #efefef;
+}
+.pure-button-primary,
+.pure-button-selected,
+a.pure-button-primary,
+a.pure-button-selected,
+#sidebar ul li a:hover {
+  background:#cc3300;
+
+}
+.pure-button.ghost {
+   background:#cc3300;
+
+}
+/*secondary*/
+#sidebar .background,
+#sidebar .agent_login {
+	background-color:#000;
+	background-color: #;
+}
+#sidebar .background {
+	opacity: 0.5;
+}
+/*accent*/
+#sidebar {
+	color: #444444;
+}
+body > section {
+	background-position: center bottom;
+	/*padding-top:100vh;*/
+}
+
+
+body > section .page .subpage-inner {
+	padding: 30px 0;
+	text-align: left;
+}
+body > section#section_home .intro .agent {
+	font-size: 18px;
+}
+body > section#section_home .intro .inner {
+	padding:20px 30px 30px 30px;
+	/*margin-left:-30px;*/
+	background: rgba(255, 255, 255, 0.75);
+}
+body > section#section_home .intro .broker_logo {
+	display: none;
+}
+body > section#section_home .intro .inner .address,
+body > section#section_home .intro .inner .price {
+	color: #555;
+	color: #;
+	font-size: 32px;
+}
+body > section#section_home .intro .subtitle {
+	color: #666;
+	display: inline;
+	font-size: 20px;
+}
+body > section#section_home .next {
+	/*height:80px;*/
+	line-height: 60px;
+	border-radius: 50% 50% 0px 0px;
+	bottom:-30px;
+}
+#player_controls.fa {
+	font-size: 18px;
+}
+#player_controls.fa-volume-up:hover::before {
+	content: "\f05e"; /* ban */
+}
+#player_controls.fa-volume-off:hover::before {
+	content: "\f144"; /* play-circle */
+}
+#contact-response {
+	padding:10px;
+	margin-bottom: 10px;
+}
+#contact-response.success {
+	background: #c0e7bc;
+	color: green;
+}
+#contact-response.error {
+	background: #e8bcbc;
+	color: red;
+}
+#sidebar .broker_logo img {
+	max-width: 50%;
+	height: auto;
+}
+#sidebar .share {
+	margin-top: 0;
+}
+#sidebar .ohp_logo {
+	max-height: 48px;
+}
+#sidebar .ohp_logo a {
+  background-size: 233px;
+  width: 44px;
+  height: 48px;
+}
+#sidebar .ohp_logo a:hover {
+  width: 233px;
+}
+#sidebar .agent_login {
+	position: relative;
+	display: block;
+	width: 100%;
+	bottom: -52px;
+	left: 0;
+	margin-left: 0;
+}
+#sidebar .agent_login span {
+	display: inline-block;
+}
+.classybox-wrap content {
+	overflow: hidden;
+}
+.classybox-wrap .number {
+	display: none;
+}
+body > section.classybox-wrap {
+	min-height: inherit;
+	padding-top: inherit;
+}
+
+iframe {
+	width:100%;
+}
+
+.label{font-size:100% !important; color:#000000 !important;}
+
+
+
+.schedule_appt{
+	color:black;
+	width:50%;
+	margin:0 auto;
+}
+
+.page-type-AlertRequest{
+ color:black;
+ width:80%;
+ margin:0 auto;
+}
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+
+
+@media all and (max-width: 800px) {
+	body > section#section_home .intro .broker_logo {
+		display: block;
+		position: absolute;
+
+
+		display: block;
+		top:-60px;
+		left:30px;
+	}
+
+	iframe {
+		width: 90%;
+	}
+}
+
+
+@media all and (max-width: 1170px) {
+	body > section:not(#section_home) {
+		background-position: center top !important;
+		background-size: 100% auto !important;
+	}
+	body > section#section_contact {
+		min-height: 768px;
+	}
+	body > section#section_contact .page {
+		min-height: 608px;
+	}
+	body > section#section_home .intro .inner {
+		margin-left:0;
+	}
+
+	#mobile_nav {
+	   width:100VW
+	}
+	#mobile_nav ul li a {
+		
+	  background:#cc3300;
+	}
+	#mobile_footer {
+		background-color: #;
+	}
+	#mobile_masthead {
+		background: #;
+		 width:100VW;
+	}
+	#mobile_masthead > a {
+		box-shadow: 0px 0px 7px 14px #;
+		background-color: #;
+	}
+	.pure-button.ghost {
+		margin-bottom: 10px;
+	}
+}
+
+@media all and (min-width:1200px){
+ 	body > section {
+ 	   padding-top:100vh;
+     }
+
+   body > section .section_heading {
+	height:97vh
+     }
+}
+
+
+ @media all and (min-width: 800px) and (max-height: 760px) {
+ 	#sidebar {
+ 		top:20px;
+ 		padding-top:20px;
+ 		padding-bottom:20px;
+ 	}
+ 	#sidebar .broker_logo {
+ 		margin-bottom: 10px;
+ 	}
+ 	#sidebar .bottom {
+ 		bottom: 0;
+ 		line-height: 16px;
+ 	}
+ 	#sidebar .agent_login {
+ 		bottom: -22px;
+ 	}
+
+
+ }
+/* IPAD PORTRAIT MODE */
+@media all
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+	body > section:not(#section_home) {
+		background-position: center -30% !important;
+	}
+}
+
+
+
+@media (max-width: 1170px){
+ .agent_info { border:none;}
+  
+  #mobile_masthead > a {padding: 0 20px !important;}
+}
+
+</style>
+
+
+    <div id="mobile_masthead">
+        <h1 class="address">46855 Agave CT </span> FREMONT, CA 94539<br /></h1>
+        <a href="#mobile_menu" id="mobile_menu_toggle">menu <span class="fa fa-angle-down"></span></a>
+    </div>
+    <nav id="mobile_nav">
+        <ul>
+						<li><a href="#section_home">Home</a></li>
+						<li><a href="#section_gallery">Photo Gallery</a></li>						
+						<li><a href="#section_mobile_22255">Property Details</a></li>
+					
+						<li><a href="#page_mapdirections">Property Map</a></li>
+					
+						<li><a href="#mortgage">Mortgage Calculator</a></li>
+										
+						
+						<li><a href="#about_me">About Me</a></li>
+						<li><a href="#section_contact_mobile">Contact Me</a></li>
+						<div class="clear"></div>
+        </ul>
+    </nav>
+
+
+<!-- NAVIGATION -->
+    <nav id="sidebar">
+        <div class="background" id="toggle"></div>
+            <div class="broker_logo" >
+             <img  src="images/logoL.png" /> 
+        </div>
+            <ul id="nav">
+						<li><a href="#section_home">Home</a></li>
+						<li><a href="#section_gallery">Photo Gallery</a></li>						
+						<li><a href="#section_mobile_22255">Property Details</a></li>
+						
+						<li><a href="#page_mapdirections">Property Map</a></li>
+					
+						<li><a href="#mortgage">Mortgage Calculator</a></li>
+										
+					
+						<li><a href="#about_me">About Me</a></li>
+						<li><a href="#section_contact_mobile">Contact Me</a></li>
+						<div class="clear"></div>
+				
+           </ul>
+    
+        <div class="bottom">
+            <p>
+                <span>Presented by:</span>
+                Lamna Ravindran
+            </p>
+            <p class="share_heading">Share This Page:</p>
+            <p class="share">
+
+                <span >					
+		<span class="social" style="font-size:20px;color:#cc3300;"><i class="fa fa-facebook"></i></span>							
+		</span>
+
+                <span >					
+		<span class="social" style="font-size:20px;color:#cc3300;"><i class="fa fa-twitter"></i></span>					
+		</span>
+
+                <span >				
+		<span class="social" style="font-size:20px;color:#cc3300;"><i class="fa fa-linkedin"></i></span>						
+		</span>
+
+                <span >								
+		<span class="social" style="font-size:20px;color:#cc3300;"><i class="fa fa-yelp"></i></span>					
+		</span>
+                									
+            </p>
+				
+            <p >
+		&copy; copyright 2016 | powered by Lamna Ravindran</a>	
+	   </p>
+
+        </div>
+
+    </nav>
+
+<!-- HOME PAGE -->
+    <section id="section_home" class="home" style="background-image:url('images/image1.jpg') ; ">
+        <h1 class="intro">
+            <span class="inner">
+                <span class="agent">					
+                   Lamna Ravindran										
+                    Presents:
+                </span>
+                <span class="address">46855 Agave CT  FREMONT, CA 94539<br><span class="subtitle">offered at</span></span>
+                 <span class="price">1,999,888  </span>
+
+            </span>
+            <span class="broker_logo">
+               <img  src="images/logo.png" /> 
+            </span>
+        </h1>
+            <a href="#section_gallery" class="next"><span class="fa fa-angle-down"></span></a>
+    </section>
+
+
+    <!-- GALLERY -->
+    <section id="section_gallery" class="gallery">
+        <article class="page">
+            <h1>Photo Gallery </h1>
+		
+		<a class="button cta_virtualtour" href="http://tours.tourfactory.com/tours/tour.asp?t=1235073&idx=1" target="_blank">
+			Virtual Tour
+		</a>
+		
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+      <li data-target="#myCarousel" data-slide-to="7"></li>
+      <li data-target="#myCarousel" data-slide-to="8"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/pic1.jpg" width="460" height="345" >
+      </div>
+
+      <div class="item">
+        <img src="images/pic2.jpg"  width="460" height="345">
+      </div>
+    
+      <div class="item">
+        <img src="images/pic3.jpg" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="images/pic4.jpg" width="460" height="345">
+      </div>
+	  
+	    <div class="item ">
+        <img src="images/pic5.jpg"  width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="images/pic6.jpg"  width="460" height="345">
+      </div>
+    
+      <div class="item">
+        <img src="images/pic7.jpg" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="images/pic8.jpg" width="460" height="345">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+		
+      
+                                                  
+        </article>
+    </section>
+    
+
+<!-- FEATURES -->
+    <section  style="background-image:url('images/image2.jpg') ; ">
+        <div class="section_heading" >
+            <h2 id="section_22255">Features</h2>
+        </div>
+        <article class="page" id="section_mobile_22255">
+
+              <div id="property_description">
+		<h2 >Property Description</h2>
+	<div class="property_description_text">Absolutely gorgeous custom home in Mission Hill with over $850K upgrades. Quiet, Excellent location,prestigeous neighborhood, Newly fully upgrades kitchen, baths &amp; flooring,new interior paint, sparkling pool ,spa,great hills view,impeccable condition.</div>
+						
+	</div>
+                                <!-- SUBPAGE -->
+            <article class="subpage-inner" id="page_22344">
+                 <h2>Features</h2>
+					<div class="info_content">
+	<h4 class="alert_header details_header"><span class="address">46855 Agave CT </span> FREMONT, CA 94539<br /></h4>
+		
+	<div id="specs">
+		<ul>
+			
+			<li>
+			<span class="label">Price:</span> 
+			$1,999,888 
+			</li>
+			
+		
+			<li id="status" style="display:">
+				<span class="label">Property Status:</span>
+				Active
+			</li>
+		
+			<li id="listingdate" style="display:none">
+				<span class="label">Date of Listing:</span>
+				
+			</li>
+		
+			<li id="solddate" style="display:none">
+				<span class="label">Sold Date:</span>
+				
+			</li>
+			
+			<li id="MLS" style="display:">
+				<span class="label">MLS Number:</span>
+				ML81548866
+			</li>
+	   
+	
+		</ul>
+	</div>
+	
+	
+	<h4 class="alert_header  details_header">Property Specs</h4>
+	
+	<ul id="specifications">
+		<li style="display:">
+			<span class="label">Property Type:</span>
+			Single Family Residence
+		</li>
+		
+		<li style="display:">
+			<span class="label">Year Built:</span>
+			1976 
+		</li>
+		
+		<li id="Tax" style="display:none">
+			<span class="label">Tax:</span>
+			 ()
+		</li>
+		
+		<li id="HOAFee" style="display:none">
+			<span class="label">HOA Fee:</span>
+			&#036;
+		</li>
+		
+		<li id="school" style="display:none">
+			<span class="label">Schools:</span>
+			
+		</li>
+		
+		<li id="Bedrooms" style="display:">
+			<span class="label">Bedrooms:</span>
+			4
+			
+		</li>
+		
+		<li id="Bathrooms" style="display:">
+			<span class="label">Bathrooms:</span>
+			3F+1P
+			
+		</li>
+		
+		<li id="basement" style="display:none">
+			<span class="label">Basement:</span>
+			n/a n/a,
+			
+		</li>
+		
+		<li id="garage" style="display:">
+			<span class="label">Parking:</span>
+			Double Garage Parking
+			
+		</li>
+		
+		<li id="interior" style="display:">
+			<span class="label">Interior Size:</span>
+			3127 sq. ft.
+			
+		</li>
+		
+		<li id="lot" style="display:">
+			<span class="label">Lot:</span>
+			 12540 sq. ft.
+			  
+			
+		</li>
+	</ul>
+	
+	<h4 class="alert_header  details_header">Property Features</h4>
+	
+	<ul id="ShortFeatures" class="cf">
+		<li>1/2 Baths : 1</li><li>Amenities : High Ceiling</li><li>Cooling : Central Forced Air</li><li>Dining Room Description : Breakfast Bar</li><li>Dining Room Description : Breakfast Nook</li><li>Dining Room Description : Formal Dining Room</li><li>Family Room Description : Separate Family Room</li><li>fedfsdfsd : gfgf</li><li>Fireplace Description : Gas Starter</li><li>Floors : Carpet</li><li>Floors : Hardwood</li><li>Floors : Tile</li><li>Foundation : Crawl Space</li><li>gfgfgf : gfgfg</li><li>Has Family Room : Yes</li><li>Has Fireplace : Yes</li><li>Has View : Yes</li><li>Heating : Central Forced Air</li><li>Kitchen Description : Cooktop - Gas</li><li>Kitchen Description : Countertop - Granite</li><li>Kitchen Description : Dishwasher</li><li>Kitchen Description : Garbage Disposal</li><li>Kitchen Description : Other</li><li>Kitchen Description : Oven - Built-In</li><li>Kitchen Description : Oven - Double</li><li>Kitchen Description : Pantry</li><li>Kitchen Description : Refrigerator (s)</li><li>Neighborhood : Alameda County</li><li>Parking Description : Attached Garage</li><li>Pool Description : Cover</li><li>Pool Description : In Ground</li><li>Pool Description : Spa/Hot Tub</li><li>Roof : Tile</li><li>Septic or Sewer : Sewer - Public</li><li>Style : English</li><li>Utilities : Public Utilities</li><li>View Description : Hills</li><li>Water : Public</li><li>Yard : Back Yard</li><li>Yard : Balcony/Patio</li><li>Yard : Fenced</li><li>Yard : Sprinkler(s) - Auto</li><li>Zoning : r</li>
+	</ul>
+
+	<ul id="LongFeatures">
+		
+	</ul>
+</div>
+
+
+
+					
+             </article>
+                                    <!-- SUBPAGE -->
+<!--    <article class="subpage-inner" id="page_22256">
+				<div class="info_content">
+					<h4 class="alert_header">Area Information </h4>		
+				<div id="area_information"><div class="info_content">
+	
+	
+	<ul id="communityList">
+		
+	</ul>
+</div></div>
+					
+				</div>		
+	</article>-->
+           </article>
+    </section>
+
+<!-- SCHEDULE -->
+    <section  style="background-image:url('images/image3.jpg') ; ">
+        <div class="section_heading" >
+            <h2 >Schedule</h2>
+        </div>
+        <article class="page" id="mortgage">
+            <div class="nav_subpages" id="alert_request">
+                <!-- <a href="#page_mapdirections" class="pure-button ghost">Map & Directions <span class="fa fa-map-marker"></span></a>  -->
+            </div>
+            
+            <p><strong><span style="font-size:14px;">Open House for 46855 Agave CT : on 3/5/2016 at 2.00pm</span></strong><br />
+            </p>
+    
+            
+            <p><strong><span style="font-size:14px;"> Showings by Appointment:</span></strong><br />
+            Contact Lamna Ravindran<br />
+            408.273.8770<br />
+            <a href="mailto:lemnasachin@gmail.com">lemnasachin@gmail.com</a>
+            </p>
+    
+                    <!-- MAP & DIRECTIONS -->
+            <article class="subpage-inner" id="page_mapdirections">
+			<div id="section_mobile_22257" id="mortgage">
+			<section class="mortgage_calculator">
+	<header>
+		<h2>Mortgage Calculator</h2>
+	</header>
+	
+	<div class="info_content">
+	
+	<div id="bottomMortCalc">
+	<form name="frmMortgageCal" >
+			<input id="ListingPrice" type="hidden" name="ListingPrice" value="1,999,888" />
+			<div id="calculator">
+				
+			<div class="sect_1">
+			 <label class="set_1" for="name_field">Property Value:</label>
+			  <span>
+			 <input id="PropertyValue" name="PropertyValue" type="text" value="1,999,888"  size="10"placeholder="$" /></span>
+			</div>
+            
+			<div class="sect_1">
+					<label class="set_1" for="name_field">Down Payment:</label>
+			<span>
+			  <input name="DownPaymentAmount" type="text" id="DownPaymentAmount" size="10"  placeholder="$"/>&nbsp;or</span>  
+ 
+			<span><input name="DownPaymentPercentage" type="text" value="20" id="DownPaymentPercentage" size="10"  />&nbsp;%</span>
+			</div>
+            
+            
+			<div class="sect_1">
+			 <label class="set_1" for="name_field">Interest Rate:</label>
+			 <span><input id="InterestRate" name="InterestRate" type="text" value="5.0" size="10" onchange="ChangeInterestRate()" />&nbsp;%</span>
+			</div>
+			<div class="sect_1">
+			 <label class="set_1" for="name_field">Loan Duration:</label>
+			 <span><input id="LoanDurationMonths" name="LoanDurationMonths" type="text" value="360" size="10"  />&nbsp;months, or</span>
+			
+			<span><input id="LoanDurationYears" name="LoanDurationYears" type="text" value="30" size="10"  />&nbsp;years</span>
+			</div>
+            
+			<div class="sect_button">
+			 <label class="set_1" for="name_field">Monthly Payment:</label>
+			  <span>
+			 <input id="MonthlyPayment" name="MonthlyPayment" type="text" value="" size="10" /></span>
+			</div>
+            
+            <div class="sect_1">
+			<input id="Calculate" type="button" value="Calculate" name="Calculate"  />
+				&nbsp;&nbsp; <input id="Restore" type="button" value="Reset" name="Restore"  />
+			</div>
+		
+		</div>
+	</form>
+	</div>
+			
+	
+</div>
+
+</section>
+
+<section class="details_and_cta">
+	<section class="property_map">
+		<header>
+			<h2>Property Map</h2>
+		</header>
+		
+		<div id="map_canvas">
+		
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.5753155530087!2d-121.91557368469043!3d37.49434697981141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fc66fde31d7d1%3A0x3bdb129aee926419!2s46855+Agave+Ct%2C+Fremont%2C+CA+94539!5e0!3m2!1sen!2sus!4v1459314249234" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</section>
+
+	
+	<div class="clear"></div>
+</section>
+
+<div class="clear"></div>
+
+
+			</div>
+
+            </article>
+        </article>
+    </section>
+	
+	
+	
+
+
+
+<!-- CONTACT -->
+
+
+    <section  style="background-image:url('images/image4.jpg') ; ">
+        <div class="section_heading" >
+            <h2 id="section_contact">Contact </h2>
+        </div>
+        <article class="page" id="section_contact_mobile">
+				<div id="about_me">	
+				<div class="info_content">
+
+	<h2 >About Me</h2>
+	<div >
+		<span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</span>
+	</div>
+</div>
+				</div>
+             <div class="agent_info">
+                    <p><img src="images/pic1.png" alt="Lamna Ravindran's Picture" /></p>
+                <h3>Lamna Ravindran</h3>
+				
+				
+				
+                    <p><span>Web Designer/Developer</span><span>CalBRE# 89876898</span><span>408.253.8570 mobile</span><span>408.272.9921 direct</span><span>408.585.6865 fax</span><span><a href="mailto:lemnasachin@gmail.com">lemnasachin@gmail.com</a></span><span><a href="#" target="_blank">www.lamnaravindran.com</a></span></p>
+                    <p class="social">
+						<span style="display:inline-block;">
+									
+							<span class="social"><i class="fa fa-facebook-official"></i></span>	
+									
+						</span>
+						<span style="display:inline-block;">
+									
+							<span class="social"><i class="fa fa-twitter"></i></span>	
+									
+						</span>
+						<span style="display:inline-block;">
+								
+							<span class="social"><i class="fa fa-linkedin"></i></span>	
+										
+						</span>
+						<span style="display:inline-block;">			
+								
+							<span class="social"><i class="fa fa-yelp"></i></span>	
+									
+						</span>	
+					 </p>
+
+                	
+            </div>
+					<div class="contact_form info_content">
+		
+			<h3 class="alert_header">Contact Request</h3>
+			
+   <form name="lamna_form" method="" action="">
+	<input type="hidden" name="FPID" value="Contact" />
+				  <div class="contact_sect">
+                   <div class="sect_1">
+					<label class="set_1" for="contact_field">Contact Preference:</label>
+					  <span> <input type="radio" value="Phone" name="Contact_Preference" checked></span>
+						Phone 
+						<span><input type="radio" value="Email" name="Contact_Preference"></span>
+						Email 
+                   </div>
+					
+					<div class="sect_1">
+					  <label class="set_1" for="contact_field">Title:</label>
+					  <span><select name="Contact_Title" id="Contact_Title">
+						  <option value="Mr." selected>Mr</option>
+						  <option value="Mrs.">Mrs</option>
+						  <option value="Ms.">Ms</option>
+						  <option value="Dr.">Dr</option>
+						</select></span>
+					</div>
+					<div class="sect_1">
+					   <label class="set_1" for="contact_field">First Name:</label>
+					  <span><input id="Contact_FirstName" type="text" name="Contact_FirstName"></span>
+					</div>
+					<div class="sect_1">
+					  <label class="set_1" for="contact_field">Last Name:</label>
+					  <span><input id="Contact_LastName" type="text" name="Contact_LastName"></span>
+					</div>
+					<div class="sect_1">
+					  <label class="set_1" for="contact_field">Email:</label>
+					 <span><input id="Contact_Email" type="text" name="Contact_Email"></span>
+					</div>
+					<div class="sect_1">
+						 <label class="set_1" for="contact_field">Phone Type:</label>
+						<span><select id="Appointment_PhoneType" name="Appointment_PhoneType">
+							<option selected value="Home">Home</option>
+							<option value="Work">Work</option>
+							<option value="Mobile">Mobile</option>
+							</select></span>
+					</div>
+					<div class="sect_1">
+						 <label class="set_1" for="contact_field">Phone:</label>
+						<span><input id="Appointment_PhoneNumber" type="text" name="Appointment_PhoneNumber"></span>
+					</div>
+					<div class="sect_1">
+					  <label class="set_1" for="contact_field">Message:</label>
+					
+					<span><textarea id="Contact_Message" name="Contact_Message"
+							rows="2" cols="50"></textarea> </span>
+					</div>
+
+                    
+					
+						</div>
+					  <input id="Button1" type="submit" value="submit" name="Button1">
+					
+				  </div>   <!-- Ends contact_sect -->
+	</form>
+	  </div>
+		   
+        </article>
+    </section>
+
+</body>
+</html>
+
+
